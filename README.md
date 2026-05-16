@@ -2,6 +2,7 @@
 
 Problema
 Municipios requieren visualizar delitos y factores asociados.
+
 ## Datos sugeridos
     • Delitos por comuna. 
     • Horarios. 
