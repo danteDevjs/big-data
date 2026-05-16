@@ -88,7 +88,7 @@ diccionarioReemplazo = {
 ##strip borra los espacios ne blancos y caracteres raros del principio y el final, lower pasa todo a minuscula para estandarizar
 df['comuna'] = df['comuna'].str.lower().replace(diccionarioReemplazo)
 
-print(df['comuna'].head(20))    
+#print(df['comuna'].head(20))    
 
 #limpieza de tipo de delitos
 #print(df['tipo_delito'].isnull().mean() * 100)
@@ -172,6 +172,17 @@ print("--- delitos generales ---\n")
 print(delitos_generales)
 print("\n")
 
+print("cantidad de delitos por gravedad\n")
+cantidad_delitos_por_gravedad = df.groupby('gravedad')['cantidad_casos'].sum().sort_values(ascending=False)
+print(cantidad_delitos_por_gravedad)
+print("\n")
+
+print("gravedad predominante\n")
+gravedad_predominante = cantidad_delitos_por_gravedad.index[0]
+print(gravedad_predominante)
+print("\n")
+
+
 print("--- cantidad total de delitos ---\n")
 cantidad_general = delitos_generales['cantidad'].sum()
 print(cantidad_general)
@@ -205,10 +216,13 @@ print("\n")
 
 #grupos etarios
 print("grupo etario\n")
+
 limites = [0, 14, 17, 29, 59, 120]
+
 nombres_grupos = ['Niños (0-14)', 'Adolescentes (15-17)', 'Jóvenes (18-29)', 'Adultos (30-59)', 'Adultos Mayores (60+)']
 
 df['grupo_etario'] = pd.cut(df['edad_involucrado'], bins=limites, labels=nombres_grupos)
+
 impacto_por_grupo = df.groupby('grupo_etario', observed=False)['cantidad_casos'].sum().sort_values(ascending=False)
 
 print(impacto_por_grupo)
@@ -236,6 +250,8 @@ dic = {
         "cantidad_total_de_delitos": int(cantidad_general),
         "delito_con_mas_casos": max.to_dict(),
         "delito_con_menos_casos": min.to_dict(),
+        "cantidad_delitos_por_gravedad": cantidad_delitos_por_gravedad.to_dict(),
+        "gravedad_predominante": str(gravedad_predominante),
 
      
 

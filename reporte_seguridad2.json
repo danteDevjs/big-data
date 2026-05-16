@@ -25,6 +25,12 @@
             "tipo_delito": "hurto",
             "cantidad": 17140.0
         },
+        "cantidad_delitos_por_gravedad": {
+            "alta": 42779.0,
+            "baja": 41236.0,
+            "media": 19547.0
+        },
+        "gravedad_predominante": "alta",
         "delitos_por_comuna": {
             "la serena": 25548.0,
             "coquimbo": 20878.0,
