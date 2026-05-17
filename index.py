@@ -83,7 +83,8 @@ df['comuna'] = df['comuna'].str.strip().replace(basura_regex, pd.NA, regex=True)
 diccionarioReemplazo = {
     'serena': 'la serena',
     'laserena': 'la serena',
-    'montepatria': 'monte patria'
+    'montepatria': 'monte patria',
+    "vicuña": "vicuna"
 }
 ##strip borra los espacios ne blancos y caracteres raros del principio y el final, lower pasa todo a minuscula para estandarizar
 df['comuna'] = df['comuna'].str.lower().replace(diccionarioReemplazo)
@@ -155,9 +156,6 @@ evolucion_mensual = df.groupby(df['mes_año'])['cantidad_casos'].sum()
 ##delitos predomimantes
 delitos_mas_comunes = df.groupby('tipo_delito')['cantidad_casos'].sum().sort_values(ascending=False)
 #print(delitos_mas_comunes)
-
-
-
 
 
 
