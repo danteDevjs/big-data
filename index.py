@@ -133,7 +133,7 @@ delitos_por_sector = df.groupby(['sector'])['cantidad_casos'].value_counts().uns
 #print(delitos_por_sector)
 
 
-#delitos por gravedad
+#delitos por gravedad'Droid Sans Mono', monospace
 delitos_por_gravedad = df.groupby('gravedad')['cantidad_casos'].sum().sort_values(ascending=False)
 #print(delitos_por_gravedad)    
 
@@ -166,112 +166,117 @@ delitos_generales = (
     df.groupby('tipo_delito')['cantidad_casos'].sum().reset_index(name='cantidad').sort_values(by='cantidad', ascending=False)
 )
 
-print("--- delitos generales ---\n")
-print(delitos_generales)
-print("\n")
+# print("--- delitos generales ---\n")
+# print(delitos_generales)
+# print("\n")
 
-print("cantidad de delitos por gravedad\n")
-cantidad_delitos_por_gravedad = df.groupby('gravedad')['cantidad_casos'].sum().sort_values(ascending=False)
-print(cantidad_delitos_por_gravedad)
-print("\n")
+# print("cantidad de delitos por gravedad\n")
+# cantidad_delitos_por_gravedad = df.groupby('gravedad')['cantidad_casos'].sum().sort_values(ascending=False)
+# print(cantidad_delitos_por_gravedad)
+# print("\n")
 
-print("gravedad predominante\n")
-gravedad_predominante = cantidad_delitos_por_gravedad.index[0]
-print(gravedad_predominante)
-print("\n")
-
-
-print("--- cantidad total de delitos ---\n")
-cantidad_general = delitos_generales['cantidad'].sum()
-print(cantidad_general)
-print("\n")
-
-print("--- delito con mas casos ---\n")
-max = delitos_generales.loc[
-    delitos_generales['cantidad'].idxmax()
-]
-print(max)  
-print("\n")
-
-print("--- delito con menos casos ---\n")
-min = delitos_generales.loc[
-    delitos_generales['cantidad'].idxmin()
-]
-print(min) 
-print("\n")
+# print("gravedad predominante\n")
+# gravedad_predominante = cantidad_delitos_por_gravedad.index[0]
+# print(gravedad_predominante)
+# print("\n")
 
 
+# print("--- cantidad total de delitos ---\n")
+# cantidad_general = delitos_generales['cantidad'].sum()
+# print(cantidad_general)
+# print("\n")
 
+# print("--- delito con mas casos ---\n")
+# max = delitos_generales.loc[
+#     delitos_generales['cantidad'].idxmax()
+# ]
+# print(max)  
+# print("\n")
 
-#comunas mas afectadas
-print("delitos por comuna\n")
-delitos_por_comuna = df.groupby('comuna')['cantidad_casos'].sum().sort_values(ascending=False)
-print(delitos_por_comuna)
-print("\n")
+# print("--- delito con menos casos ---\n")
+# min = delitos_generales.loc[
+#     delitos_generales['cantidad'].idxmin()
+# ]
+# print(min) 
+# print("\n")
 
 
 
 
-#grupos etarios
-print("grupo etario\n")
-
-limites = [0, 14, 17, 29, 59, 120]
-
-nombres_grupos = ['Niños (0-14)', 'Adolescentes (15-17)', 'Jóvenes (18-29)', 'Adultos (30-59)', 'Adultos Mayores (60+)']
-
-df['grupo_etario'] = pd.cut(df['edad_involucrado'], bins=limites, labels=nombres_grupos)
-
-impacto_por_grupo = df.groupby('grupo_etario', observed=False)['cantidad_casos'].sum().sort_values(ascending=False)
-
-print(impacto_por_grupo)
-print("\n")
-
-
-print("evolucion mensual\n")
-#tendencia delictual a lo largo del tiempo, por tipo de delito
-meses_incidencia = df.groupby('mes_año')['cantidad_casos'].sum().sort_values(ascending=False)
-print(tendencia_delictual)
-print("\n")
-
-print("mes-año con mas incidencias\n")
-print(tendencia_delictual.index[0])
-print("\n")
-print("delitos de ese mes\n")
-print(tendencia_delictual.iloc[0])
+# #comunas mas afectadas
+# print("delitos por comuna\n")
+# delitos_por_comuna = df.groupby('comuna')['cantidad_casos'].sum().sort_values(ascending=False)
+# print(delitos_por_comuna)
+# print("\n")
 
 
 
-##diccionario perron
-dic = {
-    "weas_del_brayan": {
-        "delitos_generales": delitos_generales.to_dict(),
-        "cantidad_total_de_delitos": int(cantidad_general),
-        "delito_con_mas_casos": max.to_dict(),
-        "delito_con_menos_casos": min.to_dict(),
-        "cantidad_delitos_por_gravedad": cantidad_delitos_por_gravedad.to_dict(),
-        "gravedad_predominante": str(gravedad_predominante),
+
+
+# #grupos etarios
+# print("grupo etario\n")
+
+# limites = [0, 14, 17, 29, 59, 120]
+
+# nombres_grupos = ['Niños (0-14)', 'Adolescentes (15-17)', 'Jóvenes (18-29)', 'Adultos (30-59)', 'Adultos Mayores (60+)']
+
+# df['grupo_etario'] = pd.cut(df['edad_involucrado'], bins=limites, labels=nombres_grupos)
+
+# impacto_por_grupo = df.groupby('grupo_etario', observed=False)['cantidad_casos'].sum().sort_values(ascending=False)
+
+# print(impacto_por_grupo)
+# print("\n")
+
+
+# print("evolucion mensual\n")
+# #tendencia delictual a lo largo del tiempo, por tipo de delito
+# meses_incidencia = df.groupby('mes_año')['cantidad_casos'].sum().sort_values(ascending=False)
+# print(tendencia_delictual)
+# print("\n")
+
+# print("mes-año con mas incidencias\n")
+# print(tendencia_delictual.index[0])
+# print("\n")
+# print("delitos de ese mes\n")
+# print(tendencia_delictual.iloc[0])
+
+
+
+# ##diccionario perron
+# dic = {
+#     "weas_del_brayan": {
+#         "delitos_generales": delitos_generales.to_dict(),
+#         "cantidad_total_de_delitos": int(cantidad_general),
+#         "delito_con_mas_casos": max.to_dict(),
+#         "delito_con_menos_casos": min.to_dict(),
+#         "cantidad_delitos_por_gravedad": cantidad_delitos_por_gravedad.to_dict(),
+#         "gravedad_predominante": str(gravedad_predominante),
 
      
 
-        "delitos_por_comuna": delitos_por_comuna.to_dict(),
+#         "delitos_por_comuna": delitos_por_comuna.to_dict(),
 
-        "impacto_por_grupo_etario": {str(k): v for k, v in impacto_por_grupo.to_dict().items()},
+#         "impacto_por_grupo_etario": {str(k): v for k, v in impacto_por_grupo.to_dict().items()},
         
-        "tendencia_delictual_por_mes": tendencia_delictual.set_index(tendencia_delictual.index.astype(str)).to_dict(),
+#         "tendencia_delictual_por_mes": tendencia_delictual.set_index(tendencia_delictual.index.astype(str)).to_dict(),
        
 
-        "mes_con_mayor_incidencia": {
-            "mes": str(tendencia_delictual.index[0]),
-            "casos": float(tendencia_delictual.iloc[0].sum())
-        },
- 
-       
-    }
-}
+#         "mes_con_mayor_incidencia": {
+#             "mes": str(tendencia_delictual.index[0]),
+#             "casos": float(tendencia_delictual.iloc[0].sum())
+#         },      
+#     }
+# }
 
-import json
+# import json
 
-with open('reporte_seguridad2.json', 'w', encoding='utf-8') as f:
-    json.dump(dic, f, ensure_ascii=False, indent=4)
+# with open('reporte_seguridad2.json', 'w', encoding='utf-8') as f:
+#     json.dump(dic, f, ensure_ascii=False, indent=4)
 
-print(dic)
+# print(dic)
+
+
+
+# print(df)
+
+# df.to_csv("datos_limpios.csv", na_rep="NaN",index=False, encoding="utf-8")
