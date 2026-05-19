@@ -16,7 +16,6 @@ Municipios requieren visualizar delitos y factores asociados.
         • zonas de mayor riesgo, 
         • horarios críticos, 
         • tendencias delictuales. 
-
     Indicadores clave
         • Delitos por sector. 
         • Delitos por horario. 

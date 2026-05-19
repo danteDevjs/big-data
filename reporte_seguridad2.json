@@ -49,140 +49,236 @@
             "Niños (0-14)": 2255.0
         },
         "tendencia_delictual_por_mes": {
-            "accidente": {
-                "2024-01": 432.0,
-                "2024-02": 560.0,
-                "2024-03": 420.0,
-                "2024-04": 451.0,
-                "2024-05": 557.0,
-                "2024-06": 451.0,
-                "2024-07": 585.0,
-                "2024-08": 658.0,
-                "2024-09": 624.0,
-                "2024-10": 1031.0,
-                "2024-11": 471.0,
-                "2024-12": 546.0,
-                "2025-01": 461.0,
-                "2025-02": 617.0,
-                "2025-03": 405.0,
-                "2025-04": 551.0,
-                "2025-05": 562.0,
-                "2025-06": 553.0,
-                "2025-07": 645.0,
-                "2025-08": 877.0,
-                "2025-09": 455.0,
-                "2025-10": 936.0,
-                "2025-11": 538.0,
-                "2025-12": 503.0
-            },
-            "fraude": {
-                "2024-01": 485.0,
-                "2024-02": 1015.0,
-                "2024-03": 610.0,
-                "2024-04": 548.0,
-                "2024-05": 428.0,
-                "2024-06": 605.0,
-                "2024-07": 617.0,
-                "2024-08": 990.0,
-                "2024-09": 1079.0,
-                "2024-10": 488.0,
-                "2024-11": 1543.0,
-                "2024-12": 399.0,
-                "2025-01": 578.0,
-                "2025-02": 433.0,
-                "2025-03": 468.0,
-                "2025-04": 474.0,
-                "2025-05": 571.0,
-                "2025-06": 408.0,
-                "2025-07": 495.0,
-                "2025-08": 400.0,
-                "2025-09": 534.0,
-                "2025-10": 464.0,
-                "2025-11": 444.0,
-                "2025-12": 468.0
-            },
-            "hurto": {
-                "2024-01": 671.0,
-                "2024-02": 431.0,
-                "2024-03": 434.0,
-                "2024-04": 1066.0,
-                "2024-05": 957.0,
-                "2024-06": 482.0,
-                "2024-07": 490.0,
-                "2024-08": 459.0,
-                "2024-09": 519.0,
-                "2024-10": 572.0,
-                "2024-11": 496.0,
-                "2024-12": 494.0,
-                "2025-01": 521.0,
-                "2025-02": 426.0,
-                "2025-03": 470.0,
-                "2025-04": 533.0,
-                "2025-05": 609.0,
-                "2025-06": 535.0,
-                "2025-07": 526.0,
-                "2025-08": 535.0,
-                "2025-09": 413.0,
-                "2025-10": 1030.0,
-                "2025-11": 443.0,
-                "2025-12": 625.0
-            },
-            "robo": {
-                "2024-01": 1117.0,
-                "2024-02": 963.0,
-                "2024-03": 843.0,
-                "2024-04": 1584.0,
-                "2024-05": 962.0,
-                "2024-06": 980.0,
-                "2024-07": 1563.0,
-                "2024-08": 1183.0,
-                "2024-09": 1510.0,
-                "2024-10": 888.0,
-                "2024-11": 925.0,
-                "2024-12": 1016.0,
-                "2025-01": 1198.0,
-                "2025-02": 1478.0,
-                "2025-03": 956.0,
-                "2025-04": 1597.0,
-                "2025-05": 1055.0,
-                "2025-06": 670.0,
-                "2025-07": 1260.0,
-                "2025-08": 1158.0,
-                "2025-09": 1511.0,
-                "2025-10": 823.0,
-                "2025-11": 809.0,
-                "2025-12": 957.0
-            },
-            "violencia": {
-                "2024-01": 1539.0,
-                "2024-02": 491.0,
-                "2024-03": 926.0,
-                "2024-04": 465.0,
-                "2024-05": 569.0,
-                "2024-06": 442.0,
-                "2024-07": 442.0,
-                "2024-08": 507.0,
-                "2024-09": 635.0,
-                "2024-10": 407.0,
-                "2024-11": 605.0,
-                "2024-12": 529.0,
-                "2025-01": 518.0,
-                "2025-02": 484.0,
-                "2025-03": 998.0,
-                "2025-04": 1022.0,
-                "2025-05": 543.0,
-                "2025-06": 665.0,
-                "2025-07": 570.0,
-                "2025-08": 563.0,
-                "2025-09": 544.0,
-                "2025-10": 407.0,
-                "2025-11": 537.0,
-                "2025-12": 1410.0
-            }
+            "2024-01": 5376.0,
+            "2025-12": 5157.0,
+            "2024-05": 5070.0,
+            "2024-09": 4941.0,
+            "2025-04": 4891.0,
+            "2025-10": 4865.0,
+            "2024-11": 4773.0,
+            "2024-04": 4687.0,
+            "2025-07": 4627.0,
+            "2025-02": 4605.0,
+            "2025-05": 4521.0,
+            "2024-08": 4507.0,
+            "2024-07": 4454.0,
+            "2024-03": 4398.0,
+            "2025-08": 4191.0,
+            "2025-09": 4171.0,
+            "2024-02": 4101.0,
+            "2025-03": 3997.0,
+            "2024-06": 3926.0,
+            "2024-10": 3909.0,
+            "2025-01": 3896.0,
+            "2025-06": 3838.0,
+            "2024-12": 3740.0,
+            "2025-11": 3351.0
         },
         "mes_con_mayor_incidencia": {
             "mes": "2024-01",
-            "casos": 4244.0
-        }
+            "casos": 5376.0
+        },
+        "suma_delitos_comuna": [
+            {
+                "comuna": "andacollo",
+                "tipo_delito": "accidente",
+                "cantidad_casos": 1306.0
+            },
+            {
+                "comuna": "andacollo",
+                "tipo_delito": "fraude",
+                "cantidad_casos": 1215.0
+            },
+            {
+                "comuna": "andacollo",
+                "tipo_delito": "hurto",
+                "cantidad_casos": 1705.0
+            },
+            {
+                "comuna": "andacollo",
+                "tipo_delito": "robo",
+                "cantidad_casos": 3469.0
+            },
+            {
+                "comuna": "andacollo",
+                "tipo_delito": "violencia",
+                "cantidad_casos": 2055.0
+            },
+            {
+                "comuna": "coquimbo",
+                "tipo_delito": "accidente",
+                "cantidad_casos": 2662.0
+            },
+            {
+                "comuna": "coquimbo",
+                "tipo_delito": "fraude",
+                "cantidad_casos": 2795.0
+            },
+            {
+                "comuna": "coquimbo",
+                "tipo_delito": "hurto",
+                "cantidad_casos": 2958.0
+            },
+            {
+                "comuna": "coquimbo",
+                "tipo_delito": "robo",
+                "cantidad_casos": 5271.0
+            },
+            {
+                "comuna": "coquimbo",
+                "tipo_delito": "violencia",
+                "cantidad_casos": 3316.0
+            },
+            {
+                "comuna": "illapel",
+                "tipo_delito": "accidente",
+                "cantidad_casos": 1412.0
+            },
+            {
+                "comuna": "illapel",
+                "tipo_delito": "fraude",
+                "cantidad_casos": 1192.0
+            },
+            {
+                "comuna": "illapel",
+                "tipo_delito": "hurto",
+                "cantidad_casos": 1069.0
+            },
+            {
+                "comuna": "illapel",
+                "tipo_delito": "robo",
+                "cantidad_casos": 2722.0
+            },
+            {
+                "comuna": "illapel",
+                "tipo_delito": "violencia",
+                "cantidad_casos": 2777.0
+            },
+            {
+                "comuna": "la serena",
+                "tipo_delito": "accidente",
+                "cantidad_casos": 3796.0
+            },
+            {
+                "comuna": "la serena",
+                "tipo_delito": "fraude",
+                "cantidad_casos": 4337.0
+            },
+            {
+                "comuna": "la serena",
+                "tipo_delito": "hurto",
+                "cantidad_casos": 3470.0
+            },
+            {
+                "comuna": "la serena",
+                "tipo_delito": "robo",
+                "cantidad_casos": 6313.0
+            },
+            {
+                "comuna": "la serena",
+                "tipo_delito": "violencia",
+                "cantidad_casos": 3189.0
+            },
+            {
+                "comuna": "monte patria",
+                "tipo_delito": "accidente",
+                "cantidad_casos": 2697.0
+            },
+            {
+                "comuna": "monte patria",
+                "tipo_delito": "fraude",
+                "cantidad_casos": 2272.0
+            },
+            {
+                "comuna": "monte patria",
+                "tipo_delito": "hurto",
+                "cantidad_casos": 2974.0
+            },
+            {
+                "comuna": "monte patria",
+                "tipo_delito": "robo",
+                "cantidad_casos": 3826.0
+            },
+            {
+                "comuna": "monte patria",
+                "tipo_delito": "violencia",
+                "cantidad_casos": 2924.0
+            },
+            {
+                "comuna": "ovalle",
+                "tipo_delito": "accidente",
+                "cantidad_casos": 2451.0
+            },
+            {
+                "comuna": "ovalle",
+                "tipo_delito": "fraude",
+                "cantidad_casos": 1877.0
+            },
+            {
+                "comuna": "ovalle",
+                "tipo_delito": "hurto",
+                "cantidad_casos": 1878.0
+            },
+            {
+                "comuna": "ovalle",
+                "tipo_delito": "robo",
+                "cantidad_casos": 4221.0
+            },
+            {
+                "comuna": "ovalle",
+                "tipo_delito": "violencia",
+                "cantidad_casos": 3021.0
+            },
+            {
+                "comuna": "salamanca",
+                "tipo_delito": "accidente",
+                "cantidad_casos": 1365.0
+            },
+            {
+                "comuna": "salamanca",
+                "tipo_delito": "fraude",
+                "cantidad_casos": 1778.0
+            },
+            {
+                "comuna": "salamanca",
+                "tipo_delito": "hurto",
+                "cantidad_casos": 1292.0
+            },
+            {
+                "comuna": "salamanca",
+                "tipo_delito": "robo",
+                "cantidad_casos": 2778.0
+            },
+            {
+                "comuna": "salamanca",
+                "tipo_delito": "violencia",
+                "cantidad_casos": 1099.0
+            },
+            {
+                "comuna": "vicuna",
+                "tipo_delito": "accidente",
+                "cantidad_casos": 1839.0
+            },
+            {
+                "comuna": "vicuna",
+                "tipo_delito": "fraude",
+                "cantidad_casos": 1790.0
+            },
+            {
+                "comuna": "vicuna",
+                "tipo_delito": "hurto",
+                "cantidad_casos": 1794.0
+            },
+            {
+                "comuna": "vicuna",
+                "tipo_delito": "robo",
+                "cantidad_casos": 5042.0
+            },
+            {
+                "comuna": "vicuna",
+                "tipo_delito": "violencia",
+                "cantidad_casos": 1956.0
+            }
+        ]
     }
 }
